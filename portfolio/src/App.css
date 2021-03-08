@@ -1,0 +1,12 @@
+.nav-container {
+  background-color: rgb(29, 3, 18);
+  height: 3em;
+}
+
+.nav-elements {
+  float: right;
+}
+
+.nav-element {
+  margin: 1em;
+}
