@@ -1,6 +1,13 @@
+@font-face {
+  font-family: 'Kanit';
+  src: local('Kanit'), url(./fonts/Kanit/Kanit-Medium.ttf) format('truetype');
+}
+
 .nav-container {
   background-color: rgb(29, 3, 18);
   height: 3em;
+  font-family: Kanit, sans-serif;
+  font-size: larger;
 }
 
 .nav-elements {
@@ -9,4 +16,19 @@
 
 .nav-element {
   margin: 1em;
+}
+
+.intro {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  padding-top: 4em;
+  color: white;
+  background-color: black;
+  text-align: center;
+  font-family: Kanit, sans-serif;
+}
+
+.earth {
+  z-index: -1;
 }
