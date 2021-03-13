@@ -1,26 +1,30 @@
-import React, { useState } from 'react'
-import Header from './Header'
-import earth from '../imgs/earthBackground.jpeg'
+import React, { useState, useRef, useEffect } from 'react'
+import TRUNK from 'vanta/dist/vanta.trunk.min'
 
 const Introduction = () => {
 
-
-  return (
-    <div> 
-      <Header/>
-      <div>
-      <p className="intro"> 
-        Siobahn Schuck is a Fullstack Developer and Video Artist, 
-        <br/>
-        focused on creating tools for other creatives
+  const [vantaEffect, setVantaEffect] = useState(0)
+  const myRef = useRef(null)
+  useEffect(() => {
+    if (!vantaEffect) {
+      setVantaEffect(TRUNK({
+        el: myRef.current
+      }))
+    }
+    return () => {
+      if (vantaEffect) vantaEffect.destroy()
+    }
+  }, [vantaEffect])
+  return <div ref={myRef} id="home">
+    <section className="intro">
+          <h2>Siobahn Schuck</h2>
+      <p > Creating tools for other creatives
         <br/> that both spark joy and foster community.
         <br/>
-        <button>Enter</button>
       </p>
-      <img className="earth" src={earth} alt="earth" /> 
-      </div>
-    </div>
-  )
+      
+      </section>
+  </div>
 }
 
 export default Introduction

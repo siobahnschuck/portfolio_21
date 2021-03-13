@@ -2,6 +2,10 @@
   font-family: 'Kanit';
   src: local('Kanit'), url(./fonts/Kanit/Kanit-Medium.ttf) format('truetype');
 }
+* {
+  margin: 0;
+}
+
 body {
   margin: 0;
   font-family: Kanit, sans-serif;

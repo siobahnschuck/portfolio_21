@@ -1,17 +1,18 @@
-import React, { useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import React, { NavLink} from 'react'
+import {Link } from 'react-scroll'
 
 const Header = () => {
 
 
   return (
     <div className="nav-container"> 
-      <div className="nav-elements">
-        <NavLink className="nav-element" to="/" style={{textDecoration: "none", color: "white" }}> Home </NavLink> 
-        <NavLink className="nav-element" to="/contact" style={{textDecoration: "none", color: "white" }}> Contact</NavLink> 
-        <NavLink className="nav-element" to="/about" style={{textDecoration: "none", color: "white" }}>About</NavLink>
-        <NavLink className="nav-element" to="/projects" style={{textDecoration: "none", color: "white" }}> Projects </NavLink> 
-      </div>
+      <ul className="nav-elements">
+        <li><Link activeClass="active" className="nav-element" to="home" spy={true} smooth={true} style={{textDecoration: "none", color: "white" }}> Home </Link> </li>
+        <li><Link className="nav-element" to="contact" spy={true} smooth={true} style={{textDecoration: "none", color: "white" }}> Contact</Link> </li>
+        <li><Link className="nav-element" to="about" spy={true} smooth={true} style={{textDecoration: "none", color: "white" }}>About</Link> </li>
+        <li><Link className="nav-element" to="projects" spy={true} smooth={true} style={{textDecoration: "none", color: "white" }}> Projects </Link> </li>
+        <li style={{textDecoration: "none", color: "white" }}>Resume<a target="#" href="https://myresumeUrl.atsomehostingsite.pdf" title="Resume" style={{textDecoration: "none", color: "white" }}/></li>
+      </ul>
     </div>
   )
 }
