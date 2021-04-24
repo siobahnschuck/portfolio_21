@@ -1,5 +1,4 @@
-import React, { useState } from 'react'
-import Header from './Header'
+import React from 'react'
 import ProjectCard from './ProjectCard'
 
 const Projects = () => {

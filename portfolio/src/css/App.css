@@ -6,7 +6,7 @@
 /* NAV BAR  */
 
 .nav-container {
-  background-color: rgb(29, 3, 18);
+  background-color: rgb(104, 68, 3);
   height: 3em;
   font-family: Kanit, sans-serif;
   font-size: larger;
@@ -20,62 +20,6 @@
 }
 p {
   margin: 0;
-}
-
-/* INTRODUCTION */
-
-.intro {
-  /* position: relative;
-  z-index: 1;
-  padding-top: 4em; */
-  margin: 0;
-  color: white;
-  background-color: black;
-  text-align: center;
-  font-family: Kanit, sans-serif;
-}
-
-/* ABOUT  */
-
-.about-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  background-color: white;
-  align-content: space-around;
-}
-
-.title {
-  background-color: white;
-  height: 10vh;
-  text-align: center;
-  border: 5px solid rgb(250, 188, 56);
-}
-
-.about-main {
-  grid-column: 1/2;
-  background-color: rgb(68, 126, 81);
-}
-.self {
-  height: 30vh;
-  width: auto;
-  border-radius: 200vh;
-}
-
-.about-inspo {
-  grid-column: 2/3;
-  background-color: white;
-}
-
-.skills {
-  grid-column: 2/3;
-  grid-row: 2/3;
-  background-color: rgb(68, 126, 81);
-}
-
-.element {
-  grid-column: 1/2;
-  grid-row: 2/3;
 }
 
 /* CONTACT  */

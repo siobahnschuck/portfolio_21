@@ -1,6 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react'
 import TRUNK from 'vanta/dist/vanta.trunk.min'
+import self from '../imgs/self.jpeg'
 
+import '../css/About.css'
 const Introduction = () => {
 
   const [vantaEffect, setVantaEffect] = useState(0)
@@ -17,13 +19,12 @@ const Introduction = () => {
   }, [vantaEffect])
   return <div ref={myRef} id="home">
     <section className="intro">
-          <h2>Siobahn Schuck</h2>
-      <p > Creating tools for other creatives
-        <br/> that both spark joy and foster community.
-        <br/>
-      </p>
-      
+      <h2 className="name" >siobahn schuck</h2>
+      <section className="about-inspo">
+        <img className="self" src={self} alt="self-portrait" />
       </section>
+      <p className="tag-line" > Web Developing, Designing, and Dreaming</p>
+    </section>
   </div>
 }
 
