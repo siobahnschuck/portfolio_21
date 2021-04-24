@@ -1,15 +1,21 @@
 import React, { useState } from 'react'
+import { projects } from '../projects'
 
 const ProjectCard = () => {
 
 
   return (
-    <div> 
-      <h3>title</h3>
-      <p>description</p>
-      <p>technologies</p>
-      <p>links</p>
-      <img/>
+    <div>
+      {projects.map((pro) => (
+        <div>
+          <h3>{pro.title}</h3>
+          <p>{pro.description}</p>
+          <p>{pro.tech}</p>
+          <a>{pro.link}</a>
+          <a>{pro.repo}</a>
+          <img src={pro.image} />
+        </div>
+      ))}
     </div>
   )
 }
