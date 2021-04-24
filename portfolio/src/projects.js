@@ -1,3 +1,8 @@
+import sketch from './imgs/Project_Imgs/sketch-draw.png'
+import capsule from './imgs/Project_Imgs/capsule.png'
+import ding from './imgs/Project_Imgs/ding-home.png'
+import curate from './imgs/Project_Imgs/curate-canvas.png'
+
 export const projects = [
   {
     title: 'Sketch-N-Guess',
@@ -6,7 +11,7 @@ export const projects = [
     date: 'February 2021',
     link: "https://ad-voice.surge.sh/",
     repo: "https://github.com/siobahnschuck/sketch-n-guess",
-    image: ""
+    image: sketch
   },
   {
     title: 'TimeCapped',
@@ -15,7 +20,7 @@ export const projects = [
     date: 'March 2021',
     link: 'https://enigmatic-ocean-53010.herokuapp.com/',
     repo: "https://github.com/siobahnschuck/timeCapped",
-    image:""
+    image: capsule
   },
   {
     title: 'Ding!',
@@ -24,7 +29,7 @@ export const projects = [
     date: 'March 2021',
     link: 'https://glacial-meadow-53009.herokuapp.com/',
     repo: "https://github.com/siobahnschuck/ding",
-    image: '',
+    image: ding
   },
   {
     title: 'Curate',
@@ -33,6 +38,6 @@ export const projects = [
     date: 'April 2021',
     link: 'https://eloquent-galileo-e428a9.netlify.app/',
     repo: "https://github.com/siobahnschuck/Curate",
-    image: '',
+    image: curate
   },
 ]
