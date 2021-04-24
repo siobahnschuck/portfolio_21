@@ -1,0 +1,19 @@
+.project-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 50%;
+}
+
+.screenshot {
+  width: 40vw;
+}
+
+.card-container {
+  padding: 40px;
+  align-self: center;
+  justify-self: center;
+  border: 2px solid black;
+  height: 70vh;
+  padding: 40px;
+}

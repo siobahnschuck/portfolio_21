@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Kanit';
-  src: local('Kanit'), url(./fonts/Kanit/Kanit-Medium.ttf) format('truetype');
+  src: local('Kanit'), url(../fonts/Kanit/Kanit-Medium.ttf) format('truetype');
 }
 
 /* NAV BAR  */
