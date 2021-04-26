@@ -2,8 +2,9 @@ import React from 'react'
 
 const Skills = () => {
   return (
-    <div>
+    <div className="skill-container">
       <p> TECHNICAL TOOLKIT</p>
+
     </div>
   )
 }

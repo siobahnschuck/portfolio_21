@@ -3,14 +3,16 @@ import About from './About'
 import Introduction from './Introduction'
 import Contact from './Contact'
 import Projects from './Projects'
+import Skills from './Skills'
 
 const Container = () => {
 
   return (
     <div>
-      <Introduction/> 
+      <Introduction />
       <About />
-      <Projects/>
+      <Skills />
+      <Projects />
       <Contact />
     </div>
   )

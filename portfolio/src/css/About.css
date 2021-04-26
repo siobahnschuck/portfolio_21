@@ -51,3 +51,10 @@
 .tag-line {
   padding-top: 40px;
 }
+
+/* SKILLS */
+
+.skill-container {
+  background-color: thistle;
+  height: 50vh;
+}
