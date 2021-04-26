@@ -14,8 +14,8 @@
 
 .nav-elements {
   display: flex;
-  float: right;
-  margin: 1em;
+  justify-content: space-around;
+  margin: 0 auto;
   list-style: none;
 }
 p {
