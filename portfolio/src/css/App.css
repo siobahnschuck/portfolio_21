@@ -26,6 +26,7 @@ p {
 
 .contact-container {
   background-color: darkorange;
+  height: 100vh;
 }
 
 h1 {
